@@ -11,7 +11,7 @@ Vous trouverez dans ce répertoire les exemples d'implémentation décris dans m
 * [while-loop-csv-loop](https://github.com/oliviermarin/rapport-stage-exemples/tree/master/while-csv-loop) : Utilisation de la librairie [openCSV](http://opencsv.sourceforge.net/) pour récupérer le contenu d'un fichier csv à l'aide de la méthode ```readAll()``` de la classe ```CSVReader.java```.
 
 
-* [csv-to-bean](https://github.com/oliviermarin/rapport-stage-exemples/tree/master/csv-to-bean) : Nouvelle utilisation de la librairie  [openCSV](http://opencsv.sourceforge.net/) pour faire muter les lignes du fichier immédiatement en objets grâce à une stratégie de mappage.
+* [csv-to-bean](https://github.com/oliviermarin/rapport-stage-exemples/tree/master/csv-to-bean) : Nouvelle utilisation de la librairie  [openCSV](http://opencsv.sourceforge.net/) pour faire muter les lignes du fichier immédiatement en objets grâce à une stratégie de mapping.
 
 
 * [csv-to-bean-sql](https://github.com/oliviermarin/rapport-stage-exemples/tree/master/csv-to-bean-sql) : Mutation rapide des données grâce à la stratégie de mapping et l'implémentation d'une dao (data access object) avec [JDBC](http://www.cs.mun.ca/~michael/java/jdk1.1.5-docs/guide/jdbc/getstart/introTOC.doc.html).
@@ -21,7 +21,7 @@ Vous trouverez dans ce répertoire les exemples d'implémentation décris dans m
 	+ entrée dans une table SQL
 
 
-* [quartz-scheduler-project](https://github.com/oliviermarin/rapport-stage-exemples/tree/master/quartz-scheduler-project) : Réutilisation simple de la fonctionnalité du framework permettant d'ordonnancer une tâche. Elle s'appuie notamment sur [Quartz API](http://quartz-scheduler.org/documentation).
-
-
 * [csv-to-bean-hibernate](https://github.com/oliviermarin/rapport-stage-exemples/tree/master/csv-to-bean-hibernate) : Exemple de mutation de données cette fois-ci avec [Hibernate](http://docs.jboss.org/hibernate/orm/3.5/reference/fr-FR/html/).
+
+
+* [quartz-scheduler-project](https://github.com/oliviermarin/rapport-stage-exemples/tree/master/quartz-scheduler-project) : Réutilisation simple de la fonctionnalité du framework permettant d'ordonnancer une tâche. Elle s'appuie notamment sur [Quartz API](http://quartz-scheduler.org/documentation).
