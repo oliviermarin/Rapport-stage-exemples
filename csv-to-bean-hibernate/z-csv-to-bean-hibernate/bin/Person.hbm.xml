@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping SYSTEM "hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name="csv.to.bean.domain.Person" table="PERSON">
+      <id name="personId" type="int" column="PERSON_ID">
+         <generator class="native"/>
+      </id>
+      <property name="firstname" column="FIRSTNAME" type="string"/>
+      <property name="lastname" column="LASTNAME" type="string"/>
+      <property name="age" column="AGE" type="int"/>
+   </class>
+</hibernate-mapping>
