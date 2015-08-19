@@ -6,7 +6,7 @@ import csv.to.bean.domain.Person;
 
 public class MainService {
 	
-	private final static String filePath = "C:/Users/F78973/Desktop/person.csv";
+	private final static String filePath = "/Users/oliviermarin/Desktop/rapport-stage-exemples/csv-to-bean/file/person.csv";
 	
 	public static void main(String[] args) {
 		
