@@ -2,11 +2,11 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
-	<classpathentry kind="lib" path="C:/SIMM/07 - MARMOT/marmot-jar/quartz/c3p0-0.9.1.1.jar"/>
-	<classpathentry kind="lib" path="C:/SIMM/07 - MARMOT/marmot-jar/quartz/log4j-1.2.16.jar"/>
-	<classpathentry kind="lib" path="C:/SIMM/07 - MARMOT/marmot-jar/quartz/quartz-2.2.1.jar"/>
-	<classpathentry kind="lib" path="C:/SIMM/07 - MARMOT/marmot-jar/quartz/quartz-jobs-2.2.1.jar"/>
-	<classpathentry kind="lib" path="C:/SIMM/07 - MARMOT/marmot-jar/quartz/slf4j-api-1.6.6.jar"/>
-	<classpathentry kind="lib" path="C:/SIMM/07 - MARMOT/marmot-jar/quartz/slf4j-log4j12-1.6.6.jar"/>
+	<classpathentry kind="lib" path="/Users/oliviermarin/Desktop/rapport-stage-exemples/quartz-scheduler-project/quartz/c3p0-0.9.1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/oliviermarin/Desktop/rapport-stage-exemples/quartz-scheduler-project/quartz/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="/Users/oliviermarin/Desktop/rapport-stage-exemples/quartz-scheduler-project/quartz/quartz-2.2.1.jar"/>
+	<classpathentry kind="lib" path="/Users/oliviermarin/Desktop/rapport-stage-exemples/quartz-scheduler-project/quartz/quartz-jobs-2.2.1.jar"/>
+	<classpathentry kind="lib" path="/Users/oliviermarin/Desktop/rapport-stage-exemples/quartz-scheduler-project/quartz/slf4j-api-1.6.6.jar"/>
+	<classpathentry kind="lib" path="/Users/oliviermarin/Desktop/rapport-stage-exemples/quartz-scheduler-project/quartz/slf4j-log4j12-1.6.6.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

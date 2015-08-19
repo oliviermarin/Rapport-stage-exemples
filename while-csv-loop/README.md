@@ -14,9 +14,9 @@ une liste où chaque élément est un tableau de chaines de caractères (= une l
 
 1. Télécharger le projet ```while-csv-loop``` et l'importer sous ```Eclipse``` en tant que simple ```Java Project``` 
 
-![se rendre dans les librairies](https://github.com/oliviermarin/rapport-stage-exemples/blob/master/images/conf-build-path.png?raw=true)
-
 2. Importer les librairies contenues dans le dossier le dossier ```Jar``` en se rendant dans le ```Java Build Path``` du projet puis ```Add External Jar```
+
+![se rendre dans les librairies](https://github.com/oliviermarin/rapport-stage-exemples/blob/master/images/conf-build-path.png?raw=true)
 
 ![ajouter les librairies](https://github.com/oliviermarin/rapport-stage-exemples/blob/master/images/ext-lib.png?raw=true)
 
