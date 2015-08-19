@@ -12,20 +12,27 @@ Finalement, c'est la classe [CsvToBean](http://javadox.com/net.sf.opencsv/opencs
 
 ## Contenu du fichier CSV
 
-![IMAGE ALT TEXT HERE](http://blogs.technet.com/cfs-file.ashx/__key/communityserver-blogs-components-weblogfiles/00-00-00-76-18/7140.hsg_2D00_7_2D00_11_2D00_13_2D00_04.png)
+:mag_right: **contenu :** A la difference du projet précédant, le fichier ```person.csv``` ne contient plus la date de naissance des personnes mais leur âge. Cela signifie que la classe ```Person.java``` ne contiendra plus un attribut de type [Date](https://docs.oracle.com/javase/6/docs/api/java/util/Date.html) mais de type [Integer](http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html).
+
+![contenu du fichier csv](https://github.com/oliviermarin/rapport-stage-exemples/blob/master/images/csv-to-bean-file.PNG?raw=true)
 
 ## Mise en place du projet
 
- 1. Télécharger le projet ```csv-to-bean``` et l'importer sous ```Eclipse``` en tant que simple ```Java Project``` 
- 2. Importer les librairies contenues dans le dossier le dossier ```Jar``` en se rendant dans le ```Java Build Path``` du projet puis ```Add External Jar```
+1. Télécharger le projet ```csv-to-bean``` et l'importer sous ```Eclipse``` en tant que simple ```Java Project``` 
 
-![IMAGE ALT TEXT HERE](http://wiki.lwjgl.org/images/1/15/Eclipse3.png)
+![import project](https://github.com/oliviermarin/rapport-stage-exemples/blob/master/images/import-project.png?raw=true)
 
- 3. Se rendre dans la classe ```MainService.java``` du package ```csv.loop.service```
- 4. Modifier le ```filePath``` suivant l'emplacement local du fichier ```person.csv``` 
+2. Importer les librairies contenues dans le dossier le dossier ```Jar``` en se rendant dans le ```Java Build Path``` du projet puis ```Add External Jar```
+
+![import a java project](https://github.com/oliviermarin/rapport-stage-exemples/blob/master/images/conf-build-path.png?raw=true)
+
+![csv to bean library](https://github.com/oliviermarin/rapport-stage-exemples/blob/master/images/ext-lib-csv-to-bean.png?raw=true)
+
+3. Se rendre dans la classe ```MainService.java``` du package ```csv.loop.service```
+4. Modifier le ```filePath``` suivant l'emplacement local du fichier ```person.csv``` 
 
 ```java
-private final static String filePath = "path/person.csv";
+private final static String filePath = "path/rapport-stage-exemples/csv-to-bean/file/person.csv";
 ```
 5. Lancer le service principal ```MainService.java```
 
@@ -33,6 +40,8 @@ private final static String filePath = "path/person.csv";
 
 ## Résultat
 
-On observe alors le résultat suivant :
+:chart_with_downwards_trend: **Résultat :** Les objets dynamiquement par l'intance de la classe [CsvToBean](http://javadox.com/net.sf.opencsv/opencsv/2.3/au/com/bytecode/opencsv/bean/CsvToBean.html) correspondent bien à ceux du fichier ```person.csv```. En se référant à l'implémentation de la classe ```Person.java```, on notera que l'intance de la [CsvToBean](http://javadox.com/net.sf.opencsv/opencsv/2.3/au/com/bytecode/opencsv/bean/CsvToBean.html) a pris soin de bien caster l'âge en [Integer](http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html). 
 
-![IMAGE ALT TEXT HERE](http://help.eclipse.org/luna/topic/org.eclipse.jdt.doc.user/reference/views/console/images/ref-console_view.PNG)
+![IMAGE ALT TEXT HERE](https://github.com/oliviermarin/rapport-stage-exemples/blob/master/images/csv-to-bean-console.png?raw=true)
+
+:heavy_plus_sign: **Plus :** On notera qu'il n'y a plus besoin d'itérer sur le ```CSVReader.java``` comme c'était le cas dans l'exemple précédant.
