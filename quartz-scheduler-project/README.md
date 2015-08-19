@@ -34,3 +34,5 @@ Ce mini projet a pour but de faire une démonstration de [Quartz Scheduler](http
 :chart_with_downwards_trend: **Résultat :** En observant les logs de la console, on voit que la méthode ```execute()``` de la classe ```SayHelloJob.java``` est bien appelée en début de chaque minute de l'heure système.
 
 ![IMAGE ALT TEXT HERE](https://github.com/oliviermarin/rapport-stage-exemples/blob/master/images/console-quartz-scheduler-project.PNG?raw=true)
+
+
