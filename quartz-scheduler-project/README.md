@@ -17,6 +17,9 @@ Ce mini projet a pour but de faire une démonstration de [Quartz Scheduler](http
 ## Mise en place du projet sous eclipse
 
 1. Télécharger le projet ```quartz-scheduler-project``` et l'importer sous ```Eclipse``` en tant que simple ```Java Project```. 
+
+![import project](https://github.com/oliviermarin/rapport-stage-exemples/blob/master/images/import-project.png?raw=true)
+
 2. Importer les librairies contenues dans le dossier le dossier ```quartz``` en se rendant dans le ```Java Build Path``` du projet puis ```Add External Jar```
 
 ![se rendre dans les librairies](https://github.com/oliviermarin/rapport-stage-exemples/blob/master/images/conf-build-path.png?raw=true)
