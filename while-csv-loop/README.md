@@ -36,5 +36,5 @@ private final static String filePath = "path/rapport-stage-exemples/while-csv-lo
 
 ![résultat en console](https://github.com/oliviermarin/rapport-stage-exemples/blob/master/images/console-csv-while-loop.PNG?raw=true)
 
-:heavy_minus_sign: **moins :** En itérant sur la liste de tableaux de [String](http://docs.oracle.com/javase/7/docs/api/java/lang/String.html), on construire l'objet en s'appuyant 
+:heavy_minus_sign: **moins :** En itérant sur la liste de tableaux de [String](http://docs.oracle.com/javase/7/docs/api/java/lang/String.html), on construit l'objet en s'appuyant 
 sur chaque setter et sur l'index du tableau. Ce traitement est long et s'effondre en cas de modification du fichier ```person.csv```.
