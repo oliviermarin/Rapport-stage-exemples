@@ -43,7 +43,7 @@ AGE INT NOT NULL
 1. Télécharger le projet ```csv-to-bean-sql``` et l'importer sous ```Eclipse``` en tant que simple ```Java Project``` 
 2. Importer les librairies contenues dans le dossier le dossier ```Jar``` en se rendant dans le ```Java Build Path``` du projet puis ```Add External Jar```
 
-![csv to bean sql lib](https://github.com/oliviermarin/rapport-stage-exemples/blob/master/images/csv-to-bean-sql-lib.PNG?raw=true)
+![csv to bean sql lib](https://github.com/oliviermarin/rapport-stage-exemples/blob/master/images/csv-to-bean-sql-lib.png?raw=true)
 
 3. Se rendre dans la classe ```MainService.java``` du package ```csv.loop.service```
 4. Modifier le ```filePath``` suivant l'emplacement local du fichier ```person.csv``` 
@@ -59,7 +59,7 @@ private final static String filePath = "path/rapport-stage-exemples/csv-to-bean-
 
 Résultat pour le parsage du fichier :
 
-![resultat console](https://github.com/oliviermarin/rapport-stage-exemples/blob/master/images/result-console-csv-to-bean-sql.PNG)
+![resultat console](https://github.com/oliviermarin/rapport-stage-exemples/blob/master/images/result-console-csv-to-bean-sql.png)
 
 Resultat pour la table :
 
