@@ -8,11 +8,19 @@ public class PersistPersonListService {
 	
 	public static void persistPersonList( List<Person> personList ) {
 		
+		Integer personAddedInteger= 0;
+		
 		for (Person person : personList) {
 			
-			PersonDao.createNewPerson( person );
+			if ( PersonDao.createNewPerson( person ) ) {
+				
+				personAddedInteger++;
+				
+			}
 			
 		}
+		
+		System.out.println( personAddedInteger + " personnes ont été ajoutés à la table PERSON" );
 		
 	}
 	

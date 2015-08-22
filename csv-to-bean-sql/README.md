@@ -12,7 +12,7 @@ On y ajoute un [dao](http://cyrille-herby.developpez.com/tutoriels/java/mapper-s
 
 ## Contenu du fichier CSV
 
-![IMAGE ALT TEXT HERE](http://blogs.technet.com/cfs-file.ashx/__key/communityserver-blogs-components-weblogfiles/00-00-00-76-18/7140.hsg_2D00_7_2D00_11_2D00_13_2D00_04.png)
+![contenu du fichier CSV](https://github.com/oliviermarin/rapport-stage-exemples/blob/master/images/csv-to-bean-file.PNG?raw=true)
 
 ## Mise en place
 
@@ -20,31 +20,36 @@ On y ajoute un [dao](http://cyrille-herby.developpez.com/tutoriels/java/mapper-s
 
 Sous [MySQL Workbench](http://dev.mysql.com/downloads/workbench/), procéder aux étapes suivantes :
 
- 1. Créer une base de données ```account_database```
- 2. Créer la table ```person```
+1. Créer une base de données ```account_database```
 
 ```sql
-CREATE TABLE person(
-	PERSON_ID INT AUTO_INCREMENT PRIMARY NOT NULL,
-    FIRSTNAME VARCHAR(30) NOT NULL,
-    LASTNAME VARCHAR(30) NOT NULL,
-    AGE INT NOT NULL
+CREATE SCHEMA `account_database` DEFAULT CHARACTER SET utf8 ;
+```
+
+2. Créer la table ```PERSON```
+
+```sql
+CREATE TABLE PERSON(
+PERSON_ID INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+FIRSTNAME VARCHAR(30) NOT NULL,
+LASTNAME VARCHAR(30) NOT NULL,
+AGE INT NOT NULL
 )
 ```
 :children_crossing: **memo** : créer un utilisataur de la base dont le login et le mot de passe est ```root``` pour les deux. 
 
 ### Mise en place du projet sous eclipse
 
- 1. Télécharger le projet ```csv-to-bean-sql``` et l'importer sous ```Eclipse``` en tant que simple ```Java Project``` 
- 2. Importer les librairies contenues dans le dossier le dossier ```Jar``` en se rendant dans le ```Java Build Path``` du projet puis ```Add External Jar```
+1. Télécharger le projet ```csv-to-bean-sql``` et l'importer sous ```Eclipse``` en tant que simple ```Java Project``` 
+2. Importer les librairies contenues dans le dossier le dossier ```Jar``` en se rendant dans le ```Java Build Path``` du projet puis ```Add External Jar```
 
-![IMAGE ALT TEXT HERE](http://wiki.lwjgl.org/images/1/15/Eclipse3.png)
+![csv to bean sql lib](https://github.com/oliviermarin/rapport-stage-exemples/blob/master/images/csv-to-bean-sql-lib.PNG?raw=true)
 
- 3. Se rendre dans la classe ```MainService.java``` du package ```csv.loop.service```
- 4. Modifier le ```filePath``` suivant l'emplacement local du fichier ```person.csv``` 
+3. Se rendre dans la classe ```MainService.java``` du package ```csv.loop.service```
+4. Modifier le ```filePath``` suivant l'emplacement local du fichier ```person.csv``` 
 
 ```java
-private final static String filePath = "path/person.csv";
+private final static String filePath = "path/rapport-stage-exemples/csv-to-bean-sql/file/person.csv";
 ```
 5. Lancer le service principal ```MainService.java```
 
@@ -54,8 +59,8 @@ private final static String filePath = "path/person.csv";
 
 Résultat pour le parsage du fichier :
 
-![IMAGE ALT TEXT HERE](http://help.eclipse.org/luna/topic/org.eclipse.jdt.doc.user/reference/views/console/images/ref-console_view.PNG)
+![resultat console](https://github.com/oliviermarin/rapport-stage-exemples/blob/master/images/result-console-csv-to-bean-sql.PNG)
 
 Resultat pour la table :
 
-![IMAGE ALT TEXT HERE](http://origin-symwisedownload.symantec.com/library/BUSINESS/TECH199666/workbench.png)
+![table SQL obtenue](https://github.com/oliviermarin/rapport-stage-exemples/blob/master/images/table-person-csv-to-bean-sql.png)
