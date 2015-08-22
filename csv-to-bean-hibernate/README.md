@@ -12,11 +12,28 @@ On y ajoute un [dao](http://cyrille-herby.developpez.com/tutoriels/java/mapper-s
 
 ## Contenu du fichier CSV
 
-![IMAGE ALT TEXT HERE](http://blogs.technet.com/cfs-file.ashx/__key/communityserver-blogs-components-weblogfiles/00-00-00-76-18/7140.hsg_2D00_7_2D00_11_2D00_13_2D00_04.png)
+![contenu du fichier csv](https://github.com/oliviermarin/rapport-stage-exemples/blob/master/images/csv-to-bean-file.PNG?raw=true)
 
-## Mise en place
+### Configuration d'Hibernate
 
-### Mise en place de la table
+Le fichier ```hibernate.cfg.xml``` permet de renseigner entre autres : 
+
+1. le dialecte du SGBD utilisé : spécificités liées au SGBD choisi. 
+2. L'implémentation du JDBC dédié à l'interaction avec le SGBD choisi.
+3. Les paramétres de connexion à la base de données (user, pass, url)
+4. Les classes mappées avec leurs classes associées.
+
+![configuration d'hibernate](https://github.com/oliviermarin/rapport-stage-exemples/blob/master/images/hibernate-cfg.png?raw=true)
+
+Le fichier ```Person.hbm.xml``` permet de : 
+
+1. Créer et mettre à jour la table ```PERSON``` liée à la classe ```Person.java```.
+2. Générer les méthodes telles que save, get, delete, update pour une instance de la ```Person.java```.
+3. etc...
+
+![mapping de la classe person](https://github.com/oliviermarin/rapport-stage-exemples/blob/master/images/classe-person-mapping.png?raw=true)
+
+### Construction de la table PERSON
 
 Sous [MySQL Workbench](http://dev.mysql.com/downloads/workbench/), Créer une base de données ```account_database```.
 
@@ -38,19 +55,19 @@ Sous [MySQL Workbench](http://dev.mysql.com/downloads/workbench/), Créer une ba
 
 ### Mise en place du projet sous eclipse
 
- 1. Télécharger le projet ```csv-to-bean-hibernate``` et l'importer sous ```Eclipse``` en tant que simple ```Java Project```. 
+1. Télécharger le projet ```csv-to-bean-hibernate``` et l'importer sous ```Eclipse``` en tant que simple ```Java Project```. 
 
 ![import project](https://github.com/oliviermarin/rapport-stage-exemples/blob/master/images/import-project.png?raw=true)
 
- 2. Importer les librairies contenues dans le dossier le dossier ```Jar``` en se rendant dans le ```Java Build Path``` du projet puis ```Add External Jar```
+2. Importer les librairies contenues dans le dossier le dossier ```Jar``` en se rendant dans le ```Java Build Path``` du projet puis ```Add External Jar```
 
-![IMAGE ALT TEXT HERE](http://wiki.lwjgl.org/images/1/15/Eclipse3.png)
+![hibernate external lib](https://github.com/oliviermarin/rapport-stage-exemples/blob/master/images/hibernate-ext-lib.png)
 
- 3. Se rendre dans la classe ```MainService.java``` du package ```csv.to.bean.service```
- 4. Modifier le ```filePath``` suivant l'emplacement local du fichier ```person.csv``` 
+3. Se rendre dans la classe ```MainService.java``` du package ```csv.to.bean.service```
+4. Modifier le ```filePath``` suivant l'emplacement local du fichier ```person.csv``` 
 
 ```java
-private final static String filePath = "path/person.csv";
+private final static String filePath = "path/rapport-stage-exemples/csv-to-bean-hibernate/file/person.csv";
 ```
 5. Lancer le service principal ```MainService.java```
 
@@ -60,8 +77,14 @@ private final static String filePath = "path/person.csv";
 
 :chart_with_downwards_trend: **Résultat :** pour le parsage du fichier :
 
-![IMAGE ALT TEXT HERE](http://help.eclipse.org/luna/topic/org.eclipse.jdt.doc.user/reference/views/console/images/ref-console_view.PNG)
+![résultat du parsage du fichier](https://github.com/oliviermarin/rapport-stage-exemples/blob/master/images/hibernate-ext-lib.png?raw=true)
 
-:chart_with_downwards_trend: **Résultat :** pour la table :
+:chart_with_downwards_trend: **Résultat :** pour la gestion de la persistance d'une donnée (1ère ligne du csv) par Hibernate.
 
-![IMAGE ALT TEXT HERE](http://origin-symwisedownload.symantec.com/library/BUSINESS/TECH199666/workbench.png)
+![résultat de la persistance d'une donnée](https://github.com/oliviermarin/rapport-stage-exemples/blob/master/images/hibernate-ext-lib.png?raw=true)
+
+:chart_with_downwards_trend: **Résultat :** pour l'insertion dans la table ```PERSON``` des données :
+
+![données en base](https://github.com/oliviermarin/rapport-stage-exemples/blob/master/images/hibernate-ext-lib.png?raw=true)
+
+:heavy_plus_sign: **Plus :** On constate que la préparation des requêtes SQL n'est plus assuré par le code métier par directement par Hibernate. Ceci allège considérablement les dao.
