@@ -77,11 +77,11 @@ private final static String filePath = "path/rapport-stage-exemples/csv-to-bean-
 
 :chart_with_downwards_trend: **Résultat :** pour le parsage du fichier :
 
-![résultat du parsage du fichier](https://github.com/oliviermarin/rapport-stage-exemples/blob/master/images/hibernate-ext-lib.png?raw=true)
+![résultat du parsage du fichier](https://github.com/oliviermarin/rapport-stage-exemples/blob/master/images/csv-to-bean-console.png?raw=true)
 
 :chart_with_downwards_trend: **Résultat :** pour la gestion de la persistance d'une donnée (1ère ligne du csv) par Hibernate.
 
-![résultat de la persistance d'une donnée](https://github.com/oliviermarin/rapport-stage-exemples/blob/master/images/hibernate-ext-lib.png?raw=true)
+![résultat de la persistance d'une donnée](https://github.com/oliviermarin/rapport-stage-exemples/blob/master/images/prepared-statement-hibernate.png?raw=true)
 
 :chart_with_downwards_trend: **Résultat :** pour l'insertion dans la table ```PERSON``` des données :
 
