@@ -85,6 +85,6 @@ private final static String filePath = "path/rapport-stage-exemples/csv-to-bean-
 
 :chart_with_downwards_trend: **Résultat :** pour l'insertion dans la table ```PERSON``` des données :
 
-![données en base](https://github.com/oliviermarin/rapport-stage-exemples/blob/master/images/hibernate-ext-lib.png?raw=true)
+![données en base](https://github.com/oliviermarin/rapport-stage-exemples/blob/master/images/table-person-csv-to-bean-sql.png)
 
 :heavy_plus_sign: **Plus :** On constate que la préparation des requêtes SQL n'est plus assuré par le code métier par directement par Hibernate. Ceci allège considérablement les dao.
