@@ -40,7 +40,10 @@ AGE INT NOT NULL
 
 ### Mise en place du projet sous eclipse
 
-1. Télécharger le projet ```csv-to-bean-sql``` et l'importer sous ```Eclipse``` en tant que simple ```Java Project``` 
+1. Télécharger le projet ```csv-to-bean-sql``` et l'importer sous ```Eclipse``` en tant que simple ```Java Project```
+
+![import project](https://github.com/oliviermarin/rapport-stage-exemples/blob/master/images/import-project.png?raw=true)
+
 2. Importer les librairies contenues dans le dossier le dossier ```Jar``` en se rendant dans le ```Java Build Path``` du projet puis ```Add External Jar```
 
 ![csv to bean sql lib](https://github.com/oliviermarin/rapport-stage-exemples/blob/master/images/csv-to-bean-sql-lib.png?raw=true)
