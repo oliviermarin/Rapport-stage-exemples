@@ -1,4 +1,4 @@
-package csv.to.bean.domain;
+package csv.to.bean.hibernate.domain;
 
 public class Person {
 	

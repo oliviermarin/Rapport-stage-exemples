@@ -1,4 +1,4 @@
-package csv.to.bean.util;
+package csv.to.bean.hibernate.util;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;

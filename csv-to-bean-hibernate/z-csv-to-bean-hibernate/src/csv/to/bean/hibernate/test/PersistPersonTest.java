@@ -1,9 +1,10 @@
-package csv.to.bean.test;
+package csv.to.bean.hibernate.test;
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import csv.to.bean.domain.Person;
-import csv.to.bean.util.DataBaseUtil;
+
+import csv.to.bean.hibernate.domain.Person;
+import csv.to.bean.hibernate.util.DataBaseUtil;
 
 public class PersistPersonTest {
 

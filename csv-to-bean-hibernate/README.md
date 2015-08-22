@@ -39,6 +39,9 @@ Sous [MySQL Workbench](http://dev.mysql.com/downloads/workbench/), Créer une ba
 ### Mise en place du projet sous eclipse
 
  1. Télécharger le projet ```csv-to-bean-hibernate``` et l'importer sous ```Eclipse``` en tant que simple ```Java Project```. 
+
+![import project](https://github.com/oliviermarin/rapport-stage-exemples/blob/master/images/import-project.png?raw=true)
+
  2. Importer les librairies contenues dans le dossier le dossier ```Jar``` en se rendant dans le ```Java Build Path``` du projet puis ```Add External Jar```
 
 ![IMAGE ALT TEXT HERE](http://wiki.lwjgl.org/images/1/15/Eclipse3.png)
@@ -55,10 +58,10 @@ private final static String filePath = "path/person.csv";
 
 ## Résultat
 
-Résultat pour le parsage du fichier :
+:chart_with_downwards_trend: **Résultat :** pour le parsage du fichier :
 
 ![IMAGE ALT TEXT HERE](http://help.eclipse.org/luna/topic/org.eclipse.jdt.doc.user/reference/views/console/images/ref-console_view.PNG)
 
-Resultat pour la table :
+:chart_with_downwards_trend: **Résultat :** pour la table :
 
 ![IMAGE ALT TEXT HERE](http://origin-symwisedownload.symantec.com/library/BUSINESS/TECH199666/workbench.png)

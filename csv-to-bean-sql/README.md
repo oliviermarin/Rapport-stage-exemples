@@ -60,10 +60,12 @@ private final static String filePath = "path/rapport-stage-exemples/csv-to-bean-
 
 ## Résultat
 
-Résultat pour le parsage du fichier :
+:chart_with_downwards_trend: **Résultat :** pour le parsage du fichier :
 
 ![resultat console](https://github.com/oliviermarin/rapport-stage-exemples/blob/master/images/result-console-csv-to-bean-sql.png)
 
-Resultat pour la table :
+:chart_with_downwards_trend: **Résultat :** pour la table :
 
 ![table SQL obtenue](https://github.com/oliviermarin/rapport-stage-exemples/blob/master/images/table-person-csv-to-bean-sql.png)
+
+:heavy_minus_sign: **moins :** l'insertion de l'objet en base necessite une grande quantité de code (requête préparée).

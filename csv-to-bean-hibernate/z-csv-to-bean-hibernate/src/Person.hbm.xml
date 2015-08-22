@@ -2,7 +2,7 @@
 <!DOCTYPE hibernate-mapping SYSTEM "hibernate-mapping-3.0.dtd"> 
 
 <hibernate-mapping>
-   <class name="csv.to.bean.domain.Person" table="PERSON">
+   <class name="csv.to.bean.hibernate.domain.Person" table="PERSON">
       <id name="personId" type="int" column="PERSON_ID">
          <generator class="native"/>
       </id>
